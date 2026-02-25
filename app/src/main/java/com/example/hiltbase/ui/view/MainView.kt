@@ -9,7 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
-import com.example.hiltbase.ui.composables.BottomBar
+import com.example.hiltbase.ui.composable.BottomBar
 import com.example.hiltbase.ui.viewmodel.MainViewModel
 
 @Composable

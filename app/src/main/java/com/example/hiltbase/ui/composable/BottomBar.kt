@@ -1,4 +1,4 @@
-package com.example.hiltbase.ui.composables
+package com.example.hiltbase.ui.composable
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
