@@ -7,13 +7,14 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import com.example.hiltbase.ui.composable.BottomBar
 import com.example.hiltbase.ui.viewmodel.MainViewModel
 
 @Composable
-fun MainView(navController: NavHostController, viewModel: MainViewModel = viewModel()) {
+fun MainView(navController: NavHostController) {
+    val viewModel: MainViewModel = hiltViewModel()
     Scaffold(
         bottomBar = { BottomBar(navController) }
     ) {
@@ -22,7 +23,7 @@ fun MainView(navController: NavHostController, viewModel: MainViewModel = viewMo
                 .fillMaxSize()
                 .padding(it)
         ) {
-            Text("ABC")
+            Text("MainView")
         }
     }
 }
