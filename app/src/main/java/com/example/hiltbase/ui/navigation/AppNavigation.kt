@@ -7,6 +7,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.hiltbase.ui.view.MainView
+import com.example.hiltbase.ui.view.SettingsView
 
 
 const val NAV_MAIN: String = "MainView"
@@ -25,6 +26,9 @@ fun AppNavigation(
     NavHost(navController = navHostController, startDestination = startDestination) {
         composable(NAV_MAIN) {
             MainView(navHostController)
+        }
+        composable(NAV_SETTINGS) {
+            SettingsView(navHostController)
         }
     }
 }
